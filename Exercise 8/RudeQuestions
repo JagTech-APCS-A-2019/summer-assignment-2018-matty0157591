@@ -1,1 +1,47 @@
+import java.util.Scanner;
 
+public class RudeQuestions {
+    public static void main( String[] args ) {
+	    String name, answer;
+		int age;
+		double weight, income;
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		//New question
+		System.out.print("What are you doing today?");
+		name = keyboard.next();
+		
+		System.out.print( "Hello. What is your name? " );
+		name = keyboard.next();
+		//If I enter the number 7 because it won't know how to respond.
+		
+		System.out.print( "Hi, " + name + "! How old are you? " );
+		age = keyboard.nextInt();
+		//If I enter the number 8 because it won't know how to respond.
+		
+		System.out.println( "So you're " + age + ", eh? That's not very old." );
+		System.out.print( "How much do you weigh, " + name + "? " );
+		weight = keyboard.nextDouble();
+		//If I enter the word "soup" because it won't know how to respond to the first part and //If I enter the number 7 because it won't know how to respond.
+		
+		System.out.println( weight + "! Better keep that quiet!!" );
+		System.out.print("Finally, what's your income, " + name + "? " );
+		income = keyboard.nextDouble();
+		//If I enter the word "pizza" because it won't know how to respond to the first part and //If I enter the number 7 because it won't know how to respond..
+		
+		System.out.print( "Hopefully that is " + income + " per hour" );
+		System.out.println( " and not per year!" );
+		System.out.print( "Well, thanks for answering my rude questions, " );
+		System.out.println( name + "." + "\n" );
+		
+		System.out.print( "What is the name of your family pet? " );
+		answer = keyboard.next();
+		System.out.println( answer );
+		//If I enter the number 8 because it won't know how to respond.
+		
+		//The program will blow up if you enter an integer when it is expecting a double because it doesn't know what it is asking for.
+		//The program will blow up if you enter a numeric value instead of a string because it won't know how to respond.
+		
+		
+		//Finished.
